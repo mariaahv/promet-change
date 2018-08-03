@@ -472,7 +472,9 @@ height:20px;
 
     .a-empleos{
       color: white;
-      font-size: 18px;
+      font-size: 20px;
+      padding-left: 0;
+      font-weight: bold;
 
 
     }
