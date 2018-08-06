@@ -19,6 +19,15 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/scrolling-nav.js"></script>
     <script src="scripts/site.js"></script>
+      <script type="text/javascript" src="http://promet.cl/wp-includes/js/jquery/jquery.js?ver=1.12.3"></script>
+      <script>
+    ( function ( $ ) { "use strict";
+              // alert('entro');
+      $(window).load(function() {
+        $(".cg-loader").fadeOut("slow");;
+      });
+    }( jQuery ) );
+  </script>
     <!--[if IE 8]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -27,7 +36,7 @@
     <![endif]-->
 </head>
 <body>
-  <style type="text/css">
+  <!-- <style type="text/css">
   .preload{
   width:100%;
   height:100%;
@@ -93,7 +102,7 @@
   @keyframes fadeout{
     from {opacity: 1;}
     to {opacity:0;}
-  }
+  } -->
 
 </style>
 <script language="javascript" type="text/javascript">
@@ -127,12 +136,12 @@
 //   }
 //
 // })();
-
-window.onload=function(){
-  var contenedor=document.getElementById('preload');
-   contenedor.style.visibility="hidden";
-   contenedor.style.opacity='0';
-}
+//
+// window.onload=function(){
+//   var contenedor=document.getElementById('preload');
+//    contenedor.style.visibility="hidden";
+//    contenedor.style.opacity='0';
+// }
 
 
 </script>
@@ -140,7 +149,7 @@ window.onload=function(){
 <!-- <div id="loading">
   <img src="img/wait.gif" alt="" style='margin=0 auto; position:absolute; top:50%; margin:30px 0 0 -30px;'>
 </div> -->
-
+<!--
 <div class="preload">
   <div class="logo">
     ice-<span style="color:darkturquoise;">cubes</span>
@@ -150,7 +159,156 @@ window.onload=function(){
       <div class="loader2" id="loader2"></div>
 
   </div>
-</div>
+</div> -->
+
+<header>
+  <nav class="navbar navbar-default" role="navigation">
+      <!--container -->
+      <div class="container padding-left-10">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNavbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div id="divNavbar" class="navbar-collapse collapse">
+
+              <!-- <p class="top-contacto hidden-sm hidden-xs">Cont&aacute;ctenos: 421-0762</p> -->
+
+              <div class="logo hidden-sm hidden-xs">
+                  <!-- <figure id="logo">
+                      <a href="index.html">
+                          <img id="logo-img" src="img/logo.png" alt="Promet" class="width-200">
+                      </a>
+                  </figure> -->
+                  <figure class="padding-200 hidden-xs hidden-sm">
+                          <img id="flag1" src="img/peru.png" alt="" class="flag" />
+                    </figure>
+                    <figure class="hidden-xs hidden-sm">
+                        <a href="http://promet.cl/" target="_blank">
+                            <img id="flag2" src="img/chile.png" alt="" class="flag padding-200" />
+                        </a>
+                    </figure>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li class="active"><a id="nav-home" href="index.html">HOME</a>
+                    <div id="div-home" class="line hidden-xs hidden-sm"></div>
+                  </li>
+                  <li>
+                  <!-- <li>
+                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                  </li> -->
+                  <li>
+                      <a id="nav-compania" href="compania.html">COMPAÑIA</a>
+                      <div id="div-compania" class="line hidden-xs hidden-sm"></div>
+                  </li>
+                  <!-- <li>
+                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                  </li> -->
+                  <li class="dropdown">
+                      <a id="nav-unidades" href="unidades.html" class="dropdown-toggle">UNIDADES DE NEGOCIO <b class="caret"></b></a>
+                      <div id="div-unidades" class="line hidden-xs hidden-sm"></div>
+                      <ul class="dropdown-menu hidden-sm hidden-xs">
+                          <li>
+                              <a href="ic.html" class="align-left">
+                                  <img src="img/LOGOIC_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="rental.html" class="align-left">
+                                  <img src="img/LOGORENTAL_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="servicios.html" class="align-left">
+                                  <img src="img/LOGOSERIVICO_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- <li>
+                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                  </li> -->
+                  <li class="dropdown">
+                      <a id="nav-productos" href="productos.html" class="dropdown-toggle">PRODUCTOS <b class="caret"></b></a>
+                      <div id="div-productos" class="line hidden-xs hidden-sm"></div>
+                      <ul class="dropdown-menu hidden-sm hidden-xs">
+                          <li>
+                              <a href="dlux.html" class="align-left">
+                                  <img src="img/LOGODLUX_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="pack.html" class="align-left">
+                                  <img src="img/LOGOPACK_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="panel.html" class="align-left">
+                                  <img src="img/LOGOPANEL_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="metal.html" class="align-left">
+                                  <img src="img/LOGOMETAL_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="flex.html" class="align-left">
+                                  <img src="img/LOGOFLEX_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                          <li>
+                              <a href="bladder.html" class="align-left">
+                                  <img src="img/LOGOBLADDER_menu.jpg" alt="" />
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <!-- <li>
+                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                  </li> -->
+                  <li>
+                      <a id="nav-proyectos" href="proyectos.html">PRINCIPALES PROYECTOS</a>
+                      <div id="div-proyectos" class="line hidden-xs hidden-sm"></div>
+                  </li>
+                  <!-- <li>
+                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                  </li> -->
+                  <li>
+                      <a id="nav-noticias" href="noticias.html">NOTICIAS</a>
+                      <div id="div-noticias" class="line hidden-xs hidden-sm"></div>
+                  </li>
+                  <!-- <li>
+                      <p class="hidden-xs hidden-sm font-size-20">|</p>
+                  </li> -->
+                  <li>
+                      <a id="nav-contacto" href="contacto.html">CONT&Aacute;CTENOS</a>
+                      <div id="div-contacto" class="line hidden-xs hidden-sm"></div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--container -->
+  </nav>
+</header>
+<h1 style="background-color:red">  pruebita de mariita </h1>
+
+<p style="background-color:pink">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 </body>
+
+<!--/section-->
+<div class="cg-loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+
+        <!-- <style>
+        body {overflow-x:hidden;}
+        </style> -->
 </html>
