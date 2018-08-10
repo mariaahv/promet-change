@@ -89,8 +89,9 @@ p, ul {
     -webkit-transform: scale(1.0);
   }
 }
-Stephany Alexandra Repetto Armanza
-
+.center{
+  text-align: center;
+}
 
 h1 {
     /* line-height: 0.5em; */
@@ -148,6 +149,11 @@ h2 {
     /* line-height: 0.5em; */
 	font-size: 18px;
     color: black;
+}
+
+
+h3 a b{
+  font-size: 25px;
 }
 
 .navbar-fixed-top{
